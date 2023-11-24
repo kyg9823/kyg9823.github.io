@@ -7,7 +7,6 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   const customMeta = {
     title: post?.title,
-    description: post?.description,
     date: new Date(post?.date).toISOString(),
   };
 
